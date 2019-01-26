@@ -2,10 +2,12 @@
 
 ## Шаг первый - структура документа
 
-> <!DOCTYPE html>
-> <html>
->   <head>
->   </head>
->   <body>
->   </body>
-> </html>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+  </body>
+</html>
+```
