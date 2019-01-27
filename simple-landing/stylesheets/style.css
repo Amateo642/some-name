@@ -1,0 +1,97 @@
+body {
+    /* Меняю шрифт со стандартного на подключенный в html файле Roboto Condensed */
+    /* Применяю его в body, все остальные блоки и элементы унаследуют это правило от него */
+    /* После основного шрифта указываю дополнительные */
+    /* Если Roboto вдруг не подключится, подключить следующий по списку */
+    /* Если на машине установлен Open Sans, подключить его */
+    /* Если нет и его, подключить любой шрифт без засечек (параметр sans-serif) */
+    font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
+
+    /* Шрифты бывают с засечками (serif) и без (sans-serif), см. в интернете */
+}
+
+.header-navbar {
+    background-color: #f9f9f9;
+}
+
+.header-logo {
+    height: 500px;
+
+    /* Отступ сверху, чтобы текст был посередине */
+    padding-top: 190px;
+
+    /* Выравнивание текста и цвет применятся на все дочернием блоки и элементы, в этом случае h1 и p */
+    text-align: center;
+    color: white;
+
+    /* Добавляю фон картинкой. '../images/header-bg.jpg' - относительный путь до нее */
+    /* Вот структура проекта
+        /-|
+          |- images/ -|
+          |           |- header-bg.jpg
+          |- stylesheets/ -|
+          |                |- style.css
+          |- scripts/ -|
+          |            |- app.js
+          |- index.html
+    */
+    /* Этот файл style.css находит в папке stylesheets/style.css */
+    /* А файл с картинкой лежит в папке images/header-bg.jpg */
+    /* '../' значит "вернуться в папку выше", т.е. в данном случае вернуться в корневую папку */
+    /* Затем зайти в папку images и выбрать header-bg.jpg */
+    background: url('../images/header-bg.jpg');
+
+    /* Определяет размер и правила вписывания картинки */
+    background-size: cover;
+}
+
+.header-logo h1 {
+    /* Преобразовать текст к капслоку */
+    text-transform: uppercase;
+
+    font-size: 88px;
+}
+
+.header-logo p {
+    font-size: 32px;
+}
+
+/* Класс header нигде не объявлялся, но в html коде он есть у тега header */
+/* Пускай будет, хуже от этого не будет, а если надо будет что-то менять, то он уже там есть */
+
+.section-light {
+    /* Отступы сверху и снизу по 30px, слева и справа 0 - отступов нет */
+    /* Равносильно записи padding-left: 30px; padding-right: 30px; */
+    padding: 30px 0;
+
+    /* Новый стиль min-height задает минимульную высоту (нефиксированную!) в 400px */
+    /* Если содержимого будет много, то по высоте блок растянется */
+    /* Если указать просто height: 400px; то если текста будет слишком много, то он просто поползет за блок */
+    /* Логично, что есть и max-height и то же самое с width */
+    min-height: 400px;
+}
+
+.section-light h2 {
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Создает границу шириной 1px, solid - простой непрерывной линией, серого цвета */
+    /* bottom - только снизу */
+    border-bottom: 1px solid #ccc;
+
+    /* Отступить от текста, почему бы и нет */
+    margin-bottom: 15px;
+}
+
+.section-light p {
+    /* Выровнять текст по ширине по блока */
+    text-align: justify;
+}
+
+.footer {
+    padding-top: 35px;
+    height: 90px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
