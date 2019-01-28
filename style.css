@@ -23,8 +23,23 @@ body {
     height: 230px;
     text-align: center;
 }
-.container {
+.dd-container {
     width: 1440px;
     height:80px;
     background: #f7fdfe;
+}
+.logo {
+    float: left;
+    color: #82868f;
+}
+nav {
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav li {
+    display: inline-block;
 }
