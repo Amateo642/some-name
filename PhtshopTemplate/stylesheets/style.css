@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
 }
 
 .header {
@@ -39,7 +40,7 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-  nav li {
+}
+nav li {
     display: inline-block;
 }
