@@ -7,14 +7,17 @@ body {
 .header-navbar {
     background-color: #f7fdfe;
 }
+
 .dd-btn {
     border-radius: 20%;
     color: white;
 }
+
 .dd-btn :hover {
     color: #000000;
 }
-.dd-lbl a{
+
+.dd-lbl a {
     color: #82868f;
 }
 
@@ -26,24 +29,34 @@ body {
     background: url('../images/mountain.jpg');
     background-size: cover;
 }
+
 .header-logo p {
     font-size: 32px;
 }
-.header-dv {
+
+.section-dv {
     height: 200px;
     padding-top: 50px;
     text-align: center;
     color: #000000;
     background: #f7fdfe;
 }
-.header-dv h1{
+
+.section-dv h1 {
     color: #0ebfdd;
     text-align: center;
 }
-.header-map {
+
+.section-map {
     height: 300px;
     background: #333;
 }
+
+.section-map .google {
+    width: 100%;
+    height: 300px;
+}
+
 .section-light {
     padding: 30px 0;
     max-height: 400px;
@@ -51,19 +64,19 @@ body {
     background: #0ebfdd;
     color: #f7fdfe;
 }
+
 .section-light h2 {
     text-align: center;
     text-transform: uppercase;
     border-bottom: 1px solid #ccc;
     margin-bottom: 15px;
 }
+
 .section-light p {
     text-align: center;
 }
-.col-3{
-    padding: 15px 300px;
-}
-.col-3 img {
+
+.col img {
     border-radius: 50%;
     height: 100px;
     width: 100px;
