@@ -29,9 +29,27 @@ body {
 .header-logo p {
     font-size: 32px;
 }
+.header-dv {
+    height: 200px;
+    padding-top: 50px;
+    text-align: center;
+    color: #000000;
+    background: #f7fdfe;
+}
+.header-dv h1{
+    color: #0ebfdd;
+    text-align: center;
+}
+.header-map {
+    height: 300px;
+    background: #333;
+}
 .section-light {
     padding: 30px 0;
-    max-width: 400px;
+    max-height: 400px;
+    text-align: center;
+    background: #0ebfdd;
+    color: #f7fdfe;
 }
 .section-light h2 {
     text-align: center;
@@ -41,6 +59,9 @@ body {
 }
 .section-light p {
     text-align: center;
+}
+.col-3{
+    padding: 15px 300px;
 }
 .col-3 img {
     border-radius: 50%;
