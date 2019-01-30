@@ -100,8 +100,8 @@ body {
     margin: 10px;
 }
 
-.col-4,
-.col-12 {
+.flex-container {
+    display: flex;
     background: lightskyblue;
     text-align: center;
     height: 100px;
@@ -111,9 +111,12 @@ body {
 }
 
 .col-4 {
-    flex: 0 0 calc(100% / 3 - 20px);
+    flex-wrap: wrap;
 }
 
 .col-12 {
-    flex: 0 0 calc(100% - 20px);
+    flex-wrap: wrap;
+}
+.flex-container {
+    flex-direction: row;
 }
