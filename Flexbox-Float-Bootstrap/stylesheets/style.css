@@ -96,16 +96,24 @@ body {
     text-align: center;
 }
 
-.container-dd div{
+.row {
+    margin: 10px;
+}
+
+.col-4,
+.col-12 {
     background: lightskyblue;
     text-align: center;
-    margin:10px;
-    width: 100px;
     height: 100px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.container-dd dt {
-    margin: 20px;
+
+.col-4 {
+    flex: 0 0 calc(100% / 3 - 20px);
 }
-.container-dd bb { 
-    margin: 20px;
+
+.col-12 {
+    flex: 0 0 calc(100% - 20px);
 }
