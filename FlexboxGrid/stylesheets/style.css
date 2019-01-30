@@ -117,6 +117,36 @@ body {
 .col-12 {
     flex-wrap: wrap;
 }
+
 .flex-container {
     flex-direction: row;
+}
+
+.flex-container-1 {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.flex-header {
+    flex: 1 1 100%;
+    margin: 10px 10px 20px;
+    height: 100px;
+    background: lightskyblue;
+}
+
+.flex-footer {
+    flex: 1 1 100%;
+    margin: 20px 10px 10px;
+    height: 100px;
+    background: lightskyblue;
+}
+
+.flex-cell {
+    flex: 1 1 30%;
+    margin: 10px;
+    height: 100px;
+    background: lightskyblue;
 }
