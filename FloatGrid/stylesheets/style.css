@@ -1,0 +1,49 @@
+body {
+    font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
+    padding: 10px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.header {
+    margin: 10px 10px 20px;
+    height: 100px;
+    background-color: lightskyblue;
+}
+
+.cell {
+    /* Делаю блоки float: left */
+    float: left;
+    margin: 10px;
+    background-color: lightskyblue;
+    height: 100px;
+    /* И задаю им ширину в треть экрана - 20px, аккурат вписывая в сетку */
+    width: calc(100% / 3 - 20px);
+}
+
+/* Этот блок называется clearfix */
+/* Он нужен для того, чтобы очистить поток float */
+/* Если его не будет, то сам можешь посмотреть, что будет */
+/* Что такое ::after? Это псевдокласс, он добавляет блок в конце секции */
+/* Можно убедиться в этом в отладчике Chrome */
+/* display: table и content: "" нужны для того, чтобы блок не был пустой */
+/* Пустой блок не очистит поток */
+.section::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+/* Вместо блока выше можно было бы поставить пустой блок div перед footer (см. в index.html) */
+/* И всего с одним свойством он бы выполнил ту же задачу */
+/* А можно было бы просто добавить класс .clearfix к блоку section, эффект тот же */
+/* Если хочешь попробовать, раскоменть этот блок и закоменть тот, что выше */
+/* .clearfix {
+    clear: both;
+} */
+
+.footer {
+    margin: 20px 10px 10px;
+    height: 100px;
+    background-color: lightskyblue;
+}
