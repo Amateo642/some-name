@@ -1,19 +1,21 @@
 body {
-    font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
 }
 .header-navbar {
     height: 40px;
     font-weight: bolder;
 }
 .header-logo {
-    height: 500px;  
+    height: 700px;  
     /* Выравнивание текста и цвет применятся на все дочернием блоки и элементы, в этом случае h1 и p */
     text-align: center;
     color: white;
     background: url('../images/header-logo.jpg');
     background-size: cover;
 } 
-.container-nav {
+.navbar a{
     color: white;
 }
 .container-logo {
@@ -46,6 +48,7 @@ body {
     text-transform: uppercase;
     border-bottom: 1px solid rgb(12, 154, 219);
     margin-bottom: 80px;
+    display: inline;
 }
 .section-light h2 {
     text-align: center;
@@ -71,3 +74,41 @@ body {
     color: white;
     text-align: center;
 }
+
+/*logo - 36px (Pacifico)
+nav - 14px (montserrat)
+h1 - bold 50px (montserrat)
+header-p - 20px (notosans)
+
+section1 - bold 40px (montserrat)
+16px (montserrat)
+14px (notosans)
+
+section2 - bold 40px (montserrat)
+16px (notosans)
+14px (montserrat)
+14px (notosans)
+button - bold 15px (montserrat)
+
+section3 - bold 40px (montserrat)
+14px (notosans)
+16px (montserrat)
+14px (notosans)
+
+section4 - bold 40px (montserrat)
+16px (montserrat)
+14px (notosans)
+в кружке - 16px (montserrat)
+
+section5 - bold 40px (montserrat)
+bold 16px (montserrat)
+14px (notosans)
+16px (notosans)
+
+contact us - bold 40px (montserrat)
+14px (notosans)
+16px (notosans)
+инпуты - 14px (notosans)
+button - bold 15px (montserrat)
+
+в самом низу - 14px (notosans) */
