@@ -41,7 +41,7 @@ body {
     /* Если содержимого будет много, то по высоте блок растянется */
     /* Если указать просто height: 400px; то если текста будет слишком много, то он просто поползет за блок */
     /* Логично, что есть и max-height и то же самое с width */
-    min-height: 200px;
+    min-height: 500px;
 }
 .section-service h1 {
     text-align: center;
@@ -83,37 +83,22 @@ body {
     margin-bottom: 15px;
 }
 
-.section-expertise .expertise-button {
+.expertise-button {
     width: 170px;
     height: 40px;
     border-radius: 20px;
-    transition: border .15s ease-in-out, box-shadow .15s ease-in-out;
     text-align: center;
-    line-height: 38px;
-    background-color: #fff;
+    line-height: 10px;
+    background-color: #0ebfdd;
     /* Отключил обводку, у кнопок по умолчанию есть */
     outline: none;
     /* Здесь задал границу такого же цвета, что и фон */
     border: 1px solid #0ebfdd;
-    color: #0ebfdd;
+    color: #f7fdfe;
     text-transform: uppercase;
     font-weight: bolder;
-    /* Показывать вместо курсора руку при наведении */
-    cursor: pointer;
-    /* Отбрасывать тень */
-    /* Первые два параметра отступы по оси X и Y */
-    /* Третий - размытие */
-    /* Четвертый толщина, я его пропустил, он равен нулю */
-    /* И цвет, RGBA позволяет задать прозрачность через четвертый параметр */
-    /* .3 = 0.3 и в RGBA значит 30% непрозрачность */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-}
-
-.section-expertise .expertise-button:hover {
-    /* А здесь меняю на белый и получаю эффект увеличения без лишнех строк кода */
-    border: 1px solid #fff;
-    /* Меняю тень при наведении */
-    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, .3);
+    margin: 20px;
+    font-size: 10px;
 }
 
 .section-expertise p {
@@ -130,12 +115,29 @@ body {
 
 .footer {
     padding-top: 35px;
-    height: 90px;
-    background-color: #333;
+    height: 600px;
+    background-color: #000000;
     color: white;
     text-align: center;
 }
 
+.footer .footer-button {
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    transition: border .15s ease-in-out, box-shadow .15s ease-in-out;
+    text-align: center;
+    line-height: 20px;
+    background-color: #0ebfdd;
+    /* Отключил обводку, у кнопок по умолчанию есть */
+    outline: none;
+    /* Здесь задал границу такого же цвета, что и фон */
+    border: 1px solid #0ebfdd;
+    color: #f7fdfe;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 10px;
+}
 /*logo - 36px (Pacifico)
 nav - 14px (montserrat)
 h1 - bold 50px (montserrat)
