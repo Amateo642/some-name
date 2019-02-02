@@ -68,9 +68,9 @@ body {
 
 .section-expertise {
     padding-top: 70px;
-    height: 600px;
+    height: 700px;
     text-align: center;
-    background: #0ebfdd;
+    background: #ccc;
     color: #f7fdfe;
 }
 
@@ -83,7 +83,7 @@ body {
     margin-bottom: 15px;
 }
 
-.expertise-button {
+.section-expertise .expertise-button {
     width: 170px;
     height: 40px;
     border-radius: 20px;
@@ -97,7 +97,6 @@ body {
     color: #f7fdfe;
     text-transform: uppercase;
     font-weight: bolder;
-    margin: 20px;
     font-size: 10px;
 }
 
@@ -108,8 +107,8 @@ body {
 /* Не пропускай вложенность, иначе может поплыть верстка в непредсказуемых местах */
 .section-expertise .col img {
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
 
 
