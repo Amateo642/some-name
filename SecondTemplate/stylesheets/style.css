@@ -82,6 +82,11 @@ body {
 .section-expertise h2 {
     margin-bottom: 15px;
 }
+.section-expertise .aside {
+    float: left;
+    height: 200px;
+    width: 200px;
+}
 
 .section-expertise .expertise-button {
     width: 170px;
