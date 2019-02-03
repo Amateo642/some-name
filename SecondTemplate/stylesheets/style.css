@@ -1,34 +1,42 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Noto Sans', sans-serif;
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Noto Sans', sans-serif; */
 }
+
 .header-navbar {
     height: 40px;
     font-weight: bolder;
 }
+
 .header-logo {
     height: 500px;  
     /* Выравнивание текста и цвет применятся на все дочернием блоки и элементы, в этом случае h1 и p */
     text-align: center;
     color: white;
     background: url('../images/header-logo.jpg');
-    background-size: cover;
-} 
-.navbar a{
+    background-size: cover;/*master magic*/
+    background-position: bottom;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar a {
     color: white;
 }
+
 .container-logo {
     padding-top: 100px;
 }
 
-.container-logo h1{
+.container-logo h1 {
     text-transform: uppercase;
     font-size: 40px;
     border-bottom: 2px solid #1c498b;
     margin-bottom: 30px;
 }
-.container-logo p{
+.container-logo p {
     color: #ccc;
 }
 
@@ -46,9 +54,21 @@ body {
 .section-service h1 {
     text-align: center;
     text-transform: uppercase;
-    border-bottom: 1px solid rgb(12, 154, 219);
+    /* border-bottom: 1px solid rgb(12, 154, 219); */
     margin-bottom: 80px;
+    position: relative;
 }
+
+.section-service h1::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 20px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 1px;
+    background-color: blue;
+}
+
 .section-service h2 {
     text-align: center;
     text-transform: uppercase;
@@ -66,17 +86,27 @@ body {
     width: 50px;
 }
 
-.section-expertise {
+.section-expertise { /*aбсолютли приоритет*/
     padding-top: 70px;
-    height: 700px;
+    min-height: 700px;
+    background: #ccc url('../images/aside.jpg') no-repeat;
+    background-size: 30% 100%;
+    background-position: top right;
     text-align: center;
-    background: #ccc;
     color: #f7fdfe;
 }
 
 .section-expertise .row {
     padding-top: 70px;
     padding-bottom: 70px;
+}
+
+.section-expertise .info {
+    position: relative;
+}
+
+.section-expertise i {
+    font-size: 40px;
 }
 
 .section-expertise h2 {
@@ -110,7 +140,7 @@ body {
 }
 
 /* Не пропускай вложенность, иначе может поплыть верстка в непредсказуемых местах */
-.section-expertise .col img {
+.section-expertise img {
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -142,6 +172,20 @@ body {
     font-weight: bolder;
     font-size: 10px;
 }
+
+@media (max-width: 768px) {
+    .section-expertise {
+        background-size: cover;
+        background-position: center left;
+    }
+    .section-expertise i {
+        position: absolute;
+        top: 0;
+        left: 100px;
+    }
+}
+
+
 /*logo - 36px (Pacifico)
 nav - 14px (montserrat)
 h1 - bold 50px (montserrat)
