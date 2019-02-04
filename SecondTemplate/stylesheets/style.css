@@ -33,9 +33,20 @@ body {
 .container-logo h1 {
     text-transform: uppercase;
     font-size: 40px;
-    border-bottom: 2px solid #1c498b;
-    margin-bottom: 30px;
+    /*border-bottom: 2px solid #1c498b;*/
+    margin: 30px;
 }
+.container-logo h1::after{ /*создаем лайн но просто в блоке нужно подгонять позишн во имя красоты*/
+    content: "";
+    position: absolute;
+    top: calc(100% - 60px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 2px;
+    background: #1c498b;
+} 
+
+
 .container-logo p {
     color: #ccc;
 }
@@ -65,8 +76,8 @@ body {
     top: calc(100% + 20px);
     left: calc(50% - 50px);
     width: 100px;
-    height: 1px;
-    background-color: blue;
+    height: 2px;
+    background-color: #1c498b;
 }
 
 .section-service h2 {
