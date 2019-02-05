@@ -167,8 +167,18 @@ body {
     color: #c5c5c5;
 }
 .section-portfolio .row {
+    position: relative;
     padding-top: 70px;
     padding-bottom: 70px;
+    z-index: 2;
+}
+.section-portfolio .iconka {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.15;
+}
+.section-portfolio .iconka i {
+    font-size: 300px;
 }
 .section-portfolio .info{
     position: relative;
