@@ -167,18 +167,31 @@ body {
     color: #c5c5c5;
 }
 .section-portfolio .row {
+    position: relative;
     padding-top: 70px;
     padding-bottom: 70px;
+    z-index: 2;
 }
+
+.section-portfolio .bg-icon {
+    position: absolute;
+    left: 80px;
+    z-index: 1;
+    opacity: .15;
+}
+
+.section-portfolio .bg-icon i {
+    font-size: 400px;
+}
+
 .section-portfolio .info{
     position: relative;
 }
-.section-portfolio i {
-    font-size: 40px;
-}
+
 .section-portfolio h2 {
     margin-bottom: 15px;
 }
+
 .section-portfolio p {
     text-align: center;
 }
