@@ -157,6 +157,16 @@ body {
     width: 50px;
 }
 
+.section-portfolio {
+    padding-top: 70px;
+    min-height: 700px;
+    background: #fff url('../images/kiss.jpg') no-repeat;
+    background-size: 30% 100%; 
+    background-position: top right;
+    text-align: center;
+    color: #c5c5c5
+}
+
 
 .footer {
     padding-top: 35px;
