@@ -172,6 +172,7 @@ body {
     padding-bottom: 70px;
     z-index: 2;
 }
+<<<<<<< HEAD
 .section-portfolio .iconka {
     position: absolute;
     z-index: 1;
@@ -179,16 +180,28 @@ body {
 }
 .section-portfolio .iconka i {
     font-size: 300px;
+=======
+
+.section-portfolio .bg-icon {
+    position: absolute;
+    left: 80px;
+    z-index: 1;
+    opacity: .15;
 }
+
+.section-portfolio .bg-icon i {
+    font-size: 400px;
+>>>>>>> 0d0d2e546e341f5b5d56f0c391eb0f1e581d1b33
+}
+
 .section-portfolio .info{
     position: relative;
 }
-.section-portfolio i {
-    font-size: 40px;
-}
+
 .section-portfolio h2 {
     margin-bottom: 15px;
 }
+
 .section-portfolio p {
     text-align: center;
 }
