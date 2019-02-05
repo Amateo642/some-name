@@ -164,9 +164,24 @@ body {
     background-size: 30% 100%; 
     background-position: top right;
     text-align: center;
-    color: #c5c5c5
+    color: #c5c5c5;
 }
-
+.section-portfolio .row {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.section-portfolio .info{
+    position: relative;
+}
+.section-portfolio i {
+    font-size: 40px;
+}
+.section-portfolio h2 {
+    margin-bottom: 15px;
+}
+.section-portfolio p {
+    text-align: center;
+}
 
 .footer {
     padding-top: 35px;
