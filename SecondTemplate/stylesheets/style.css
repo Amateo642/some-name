@@ -195,17 +195,19 @@ body {
 
 .flex-pictures {
     display: flex;
-    height: 400px;
+    height: 600px;
     flex-flow: row wrap;
+    overflow: hidden;
+}
+
+.flex-cell {
+    flex: 1 1 calc(100% /3);
+    height: 300px;
 }
 
 .flex-pictures img {
     height: 100%;
-    object-fit: cover;
-}
-
-.flex-cell {
-    flex: 1 1 30%;
+    object-fit: contain;
 }
 
 .footer {
