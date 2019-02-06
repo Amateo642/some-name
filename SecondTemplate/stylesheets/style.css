@@ -193,6 +193,21 @@ body {
     text-align: center;
 }
 
+.flex-pictures {
+    display: flex;
+    height: 400px;
+    flex-flow: row wrap;
+}
+
+.flex-pictures img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-cell {
+    flex: 1 1 30%;
+}
+
 .footer {
     padding-top: 35px;
     height: 600px;
