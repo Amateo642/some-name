@@ -245,13 +245,11 @@ body {
     float: left;
 }
 
-.section-about .col-md-7 img {
+.section-about .col-md-2 img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
     border: 2px solid rgb(136, 134, 134);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .section-about .about-button {
