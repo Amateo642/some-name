@@ -211,6 +211,41 @@ body {
     object-fit: none;
 }
 
+.section-about {
+    padding-top: 70px;
+    height: 1500px;
+    text-align: center;
+    background: #fff;
+}
+
+.section-about h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px;
+    position: relative;
+}
+
+.section-about h1::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 20px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 2px;
+    background-color: #1e94d8;
+}
+
+.section-about p {
+    font-size: 10px;
+    color: #c5c5c5;
+}
+
+.section-about .col-7 img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
 .footer {
     padding-top: 35px;
     height: 600px;
