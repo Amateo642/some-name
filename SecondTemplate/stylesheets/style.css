@@ -250,6 +250,17 @@ body {
     width: 100px;
     border-radius: 50%;
     border: 2px solid rgb(136, 134, 134);
+    position: relative;
+}
+
+.section-about .col-md-2::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 110px);
+    left: calc(50% );
+    width: 2px;
+    height: 100%;
+    background-color: rgb(136, 134, 134);
 }
 
 .section-about .about-button {
@@ -264,6 +275,34 @@ body {
     font-size: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.section-team {
+    padding-top: 70px;
+    height: 600px;
+    text-align: center;
+    background: rgb(172, 168, 168);
+}
+
+.section-team .row {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.section-team h2 {
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.section-team p {
+    text-align: center;
+    font-size: 10px;
+    color: #ccc;
+}
+.section-team .col img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px;
 }
 
 .footer {
