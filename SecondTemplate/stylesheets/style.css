@@ -28,6 +28,7 @@ body {
 
 .container-logo {
     padding-top: 100px;
+    position: relative;
 }
 
 .container-logo h1 {
@@ -39,7 +40,7 @@ body {
 .container-logo h1::after{ /*создаем лайн но просто в блоке нужно подгонять позишн во имя красоты*/
     content: "";
     position: absolute;
-    top: calc(100% - 60px);
+    top: calc(100% - 40px);
     left: calc(50% - 50px);
     width: 100px;
     height: 2px;
@@ -250,31 +251,39 @@ body {
     width: 100px;
     border-radius: 50%;
     border: 2px solid rgb(136, 134, 134);
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50px);
+    z-index: 999;
 }
 
 .section-about .col-md-2::after {
     content: "";
     position: absolute;
-    top: calc(100% - 110px);
-    left: calc(50% );
+    top: 0;
+    left: calc(50% - 1px);
     width: 2px;
     height: 100%;
     background-color: rgb(136, 134, 134);
+    z-index: 1;
 }
 
 .section-about .about-button {
     width: 100px;
     height: 100px;
+    padding-top: 20px;
     border-radius: 50%;
     text-align: center;
     background: #0ebfdd;
     border: 2px solid rgb(136, 134, 134);
     color: #fff;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
 }
 
 .section-team {
