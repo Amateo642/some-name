@@ -20,10 +20,16 @@ body {
 
 .navbar-brand {
     font-family: 'Pacifico', cursive;
+    font-size: 36px;
 }
 
 .navbar a {
     color: white;
+}
+
+.nav-link {
+    font-family: 'montserrat';
+    font-size: 14px;
 }
 
 .container-logo {
