@@ -1,3 +1,19 @@
 body {
     font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
 }
+.header-navbar {
+    height: 40px;
+    font-weight: bolder;
+}
+.header-logo {
+    height: 500px;
+    text-align: center;
+    color: white;
+    background: #683c68;
+    background-size: cover;
+    background-position: bottom;
+}
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    
+}
