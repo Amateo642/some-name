@@ -6,28 +6,58 @@ body {
     font-weight: bolder;
 }
 .header-logo {
-    height: 500px;
+    height: 400px;
     text-align: center;
     color: white;
-    background: #683c68;
+    background: #87509c;
     background-size: cover;
     background-position: bottom;
 }
 .navbar-brand {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Myriad Pro Regular';
     
 }
 
 .navbar a {
     color: white;
+    /*font-family: 'TitilliumWeb Regular';*/
 }
 
 .nav-link.active {
-    padding: 5px;
-    background: darkslateblue;
+    background: #643a79;
 }
 
 .container-logo {
     padding-top: 100px;
     position: relative;
+}
+
+.logo-button {
+    background: #eb7d4b;
+    border-color: #c86a40;
+    margin: 30px;
+}
+
+
+.section-service {
+    height: 500px;
+    text-align: center;
+    color: white;
+    background: #17c2a4;
+    padding: 30px;
+}
+
+.section-service h1 {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-service h1::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 20px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 2px;
+    background-color: #07584a; 
 }
