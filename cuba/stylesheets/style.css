@@ -17,3 +17,17 @@ body {
     font-family: 'Pacifico', cursive;
     
 }
+
+.navbar a {
+    color: white;
+}
+
+.nav-link.active {
+    padding: 5px;
+    background: darkslateblue;
+}
+
+.container-logo {
+    padding-top: 100px;
+    position: relative;
+}
