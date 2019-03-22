@@ -33,14 +33,19 @@ body {
 }
 
 .logo-button {
+    width: 200px;
+    height: 40px;
     background: #eb7d4b;
     border-color: #c86a40;
     margin: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
 }
 
 
 .section-service {
-    height: 500px;
+    height: 600px;
     text-align: center;
     color: white;
     background: #17c2a4;
@@ -60,4 +65,32 @@ body {
     width: 100px;
     height: 2px;
     background-color: #07584a; 
+}
+
+.section-service p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 5px;
+}
+
+.section-service .row {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.section-service .info {
+    position: relative;
+}
+.section-service h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.section-service img {
+    height: 100px;
+    width: 100px;
+}
+
+.section-team {
+    height: 600px;
 }
