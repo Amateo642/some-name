@@ -45,7 +45,7 @@ body {
 
 
 .section-service {
-    height: 600px;
+    min-height: 600px;
     text-align: center;
     color: white;
     background: #17c2a4;
@@ -69,7 +69,7 @@ body {
 
 .section-service p {
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 5px;
 }
 
@@ -92,5 +92,60 @@ body {
 }
 
 .section-team {
-    height: 600px;
+    height: 700px;
+    padding: 30px;
+    background: #ececec;
+    text-align: center;
+}
+
+.section-team h1 {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+    color: #494852;
+}
+
+.section-team h1::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 20px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 2px;
+    background-color:#c0c0c0;
+}
+
+.section-team p {
+    text-align: center;
+    font-size: 12px;
+    color: #494852;
+    line-height: 5px;
+}
+
+.section-team .row {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section-team h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #494852;
+}
+.section-team .lazur{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(21, 185, 214);
+    margin-bottom: 30px;
+}
+
+.section-team .col-3 img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px;
+}
+.section-team i {
+    margin-top: 15px;
+    font-size: 20px;
 }
