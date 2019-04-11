@@ -313,12 +313,83 @@ body {
 }
 
 
-/*
+
 .section-touch {
+    padding-top: 70px;
+    height: 500px;
+    text-align: center;
     background: #3c5499;
-    button #30bae7; border 299ec5;
-    email #273a71;
+    color: white;
 }
+
+.section-touch h1 {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-touch h1::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 20px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 2px;
+    background: #273a71;
+}
+
+.section-touch p {
+    font-size: 14px;
+}
+
+.section-touch .row {
+    margin: 20px;
+}
+
+.section-touch .col-4 input {
+    width: 100%;
+    background: #273a71;
+    border: #273a71;
+    color: white;
+}
+
+.section-touch .col-md-8 textarea {
+    height: 150px;
+    width: 100%;
+    background: #273a71; 
+    border: #273a71;
+    color: white;
+}
+
+.place_holder {
+    z-index: 100;
+    left: 10px;
+    cursor: text;
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 100%;
+    display: none;
+    color: white;
+}
+.placeinput input:invalid + .place_holder {
+    display: inline;
+}
+.placeinput {
+    position: relative;
+    overflow: hidden;
+}
+.place_holder span {
+    color: red;
+}
+
+/*.section-touch .redstar {
+    color: red;
+}*/
+
+/*button #30bae7; border 299ec5;
+    email #273a71;*/
+
+/*
 .footer 
 background #344b8e;
 twitter 30bae7; */
