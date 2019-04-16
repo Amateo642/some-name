@@ -316,7 +316,7 @@ body {
 
 .section-touch {
     padding-top: 70px;
-    height: 500px;
+    height: 600px;
     text-align: center;
     background: #3c5499;
     color: white;
@@ -360,7 +360,26 @@ body {
     color: white;
 }
 
-.place_holder {
+.section-touch .touch-button {
+    width: 200px;
+    height: 40px;
+    background: #30bae7;
+    border: #299ec5;
+    text-align: center;
+    font-size: 12px;
+    margin: 30px;
+    color: white;
+}
+
+.footer-navbar {
+    height: 50px;
+    background: #344b8e;
+    text-align: center;
+}
+.nav-item.active a {
+    color: #30bae7;
+}
+/*.place_holder {
     z-index: 100;
     left: 10px;
     cursor: text;
@@ -381,13 +400,12 @@ body {
 .place_holder span {
     color: red;
 }
-
+*/
 /*.section-touch .redstar {
     color: red;
 }*/
 
-/*button #30bae7; border 299ec5;
-    email #273a71;*/
+
 
 /*
 .footer 
