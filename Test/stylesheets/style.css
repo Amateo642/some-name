@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
+}
+.header-navbar {
+    height: 40px;
+    font-weight: bolder;
+}
+
+.nav-link.active {
+    color: #344281;
+}
+.nav-link.gray{
+    color: #8d8d8d;
+}
+.nav-link.black {
+    color: #252525;
+}
+
+.header-logo {
+    height: 1000px;  
+    text-align: left;
+    color: #252525;
+    background: url('../images/test1.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    color: #2a2a2a;
+    width: 500px;
+}
+
+.nav-link {
+    font-family: 'montserrat';
+    font-size: 14px;
+}
+
+.container-logo {
+    margin-top: 300px; 
+    font-size: 40px;
+}
+
+.click {
+    padding-top: 20px;
+}
+
+.click-prev,
+.click-next {
+    position: absolute;
+    top: 50%;
+    display: block;
+    padding: 0;
+    -webkit-transform: translate(0, -55%);
+    -ms-transform: translate(0, -55%);
+    transform: translate(0, -55%);
+    font-size: 48px;
+    cursor: pointer;
+    color: #ddd;
+    border: none;
+    outline: none;
+}
+
+.click-prev:hover,
+.click-prev:focus,
+.click-next:hover,
+.click-next:focus {
+    color: #ddd;
+    outline: none;
+    background: transparent;
+}
+
+.click-prev {
+    left: -30px;
+}
+
+.click-next {
+    right: -30px;
+}
