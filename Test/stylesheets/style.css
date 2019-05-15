@@ -7,10 +7,12 @@ body {
 }
 
 .nav-link.active {
-    color: #344281;
+    color: blue;
+    text-align: left;
 }
 .nav-link.gray{
     color: #8d8d8d;
+    text-align: left;
 }
 .nav-link.black {
     color: #252525;
@@ -20,7 +22,7 @@ body {
     height: 1000px;  
     text-align: left;
     color: #252525;
-    background: url('../images/test1.jpg');
+    background: url('../images/test.jpg');
     background-size: cover;
     background-position: bottom;
 }
@@ -36,7 +38,14 @@ body {
     font-size: 14px;
 }
 
+.header-button {
+    background: blue;
+    color: white;
+    border-color: blue;
+}
+
 .container-logo {
+    height: 500px;
     margin-top: 300px; 
     font-size: 40px;
 }
@@ -80,4 +89,8 @@ body {
 
 .section-about {
     height: 1000px;
+}
+.about-us {
+    font-size: 80px;
+    color: blue;
 }
