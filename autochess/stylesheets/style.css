@@ -58,3 +58,11 @@ body {
     color: white;
     text-align: center;
 }
+
+.builder-logo {
+    min-height: 800px;
+    padding-top: 190px;
+    text-align: center;
+    color: white;
+    background: url('../images/board.jpg'); 
+}
