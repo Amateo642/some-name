@@ -8,10 +8,64 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="shortcut icon" href="images/favicon_mini.png" type="image">
 </head>
 
 <body>
-    
+    <header class="header">
+        <nav class="navbar header-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">Synergy Builder</a>
+                <ul class="nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Main</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="builder.html">Builder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rarity.html">Rarity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="items.html">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script>
+        function collapsElement (id) {
+            if (document.getElementById(id).style.display != "none") {
+                document.getElementById(id).style.display = 'none';
+            }
+            else {
+                document.getElementById(id).style.display = '';
+            }
+        }
+    </script>
+
+    <div class="rarity-logo">
+        <div class="container">
+            <div class="table">
+                <div class="row">
+                    <div class="col"> <a href="javascrpipt:collaspElement('defector1');
+                        javascrpipt:collapsElement('egersisRanger2')" title="" rel="nofollow">Common</a>
+                    </div>
+                    <div class="defector1" style="display: none">
+                        <p class="name">Defector</p>
+                        <a href="defector.html"><img src="images/face/Defector.png" id="face" alt=""></a> 
+                    </div>
+                    <div class="egersisRanger2" style="display: none">
+                        <p class="name">Egersis Ranger</p>
+                        <a href="egersisRanger.html"><img src="images/face/Egersis Ranger.png" id="face" alt=""></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         <footer class="footer">
                 <div class="container">
                     <div class="row">

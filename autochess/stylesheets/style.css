@@ -60,9 +60,35 @@ body {
 }
 
 .builder-logo {
-    min-height: 800px;
+    height: 1000px;
     padding-top: 190px;
     text-align: center;
     color: white;
     background: url('../images/board.jpg'); 
+    background-size: cover;
+}
+
+.rarity-logo {
+    height: 1000px;
+    padding-top: 190px;
+    text-align: center;
+    color: white;
+    background: url('../images/rarity.jpg');
+    background-size: cover;
+}
+.rarity-logo .table{
+    border-spacing: 50px 50px;
+}
+.rarity-logo .col {
+    width: 300px;
+}
+.rarity-logo .name{
+    text-align: justify;
+    color: #eee9e9;
+    font-style: italic;
+    font-size: 15px;
+}
+#face{
+    height: 100px;
+    width: 100px;
 }
