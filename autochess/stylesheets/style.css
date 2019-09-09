@@ -76,18 +76,31 @@ body {
     background: url('../images/rarity.jpg');
     background-size: cover;
 }
-.rarity-logo .table{
-    border-spacing: 50px 50px;
-}
-.rarity-logo .col {
-    width: 300px;
-}
-.rarity-logo .name{
-    text-align: justify;
-    color: #eee9e9;
-    font-style: italic;
+
+.collapsible {
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
     font-size: 15px;
 }
+
+.active, .collapsible:hover {
+    background-color: inherit;
+}
+
+.rarity-logo .content{
+    padding: 0 18px;
+    display: none;
+    overflow: none;
+    background-color: inherit;
+}
+
+
 #face{
     height: 100px;
     width: 100px;
