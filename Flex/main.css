@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background: #ddd;
+  }
+  
+  .blog {
+    padding: 5px 15px;
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .blogItem {
+    padding: 5px;
+    margin: 20px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .blogItem__cat {
+    flex-grow: 0.5;
+    margin-left: auto;
+    padding: 5px;
+  }
+  
+  .blogItem__dt {
+    flex-grow: 0.5;
+    text-align: right;
+    padding: 5px;
+  }
+  
+  .ib-center {
+    display: inline-block;
+    text-align: center;
+  }
+  
