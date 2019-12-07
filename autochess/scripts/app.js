@@ -1,3 +1,4 @@
+// rarity
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -11,4 +12,18 @@ for (i = 0; i < coll.length; i++) {
             content.style.display = "block";
         }
     });
+}
+
+// builder
+let panelHeroes = document.querySelector(".panel-heroes");
+
+const heroes = {
+    'AbyssalCrawler': 1,
+    'AbyssalGuard': 2,
+    1: 'AbyssalCrawler',
+    2: 'AbyssalGuard',
+}
+
+function chooseHero(heroName) {
+    alert(heroes[heroName]);
 }
