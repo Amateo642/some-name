@@ -69,7 +69,7 @@ body {
 }
 
 .rarity-logo {
-    height: 1000px;
+    min-height: 1000px;
     padding-top: 190px;
     text-align: center;
     color: white;
@@ -93,6 +93,11 @@ body {
     background-color: inherit;
 }
 
+.collapsible p {
+    text-align: center;
+    font-size: 30px; 
+}
+
 .rarity-logo .content{
     padding: 0 18px;
     display: none;
@@ -100,8 +105,15 @@ body {
     background-color: inherit;
 }
 
+.rarity-logo .col-2 {
+    margin-bottom: 15px; 
+}
 
-#face{
-    height: 100px;
-    width: 100px;
+.rarity-logo .origin {
+    height: 25px;
+    width: 25px;
+}
+.rarity-logo .class {
+    height: 25px;
+    width: 25px;
 }
