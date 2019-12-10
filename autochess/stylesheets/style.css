@@ -95,8 +95,24 @@ body {
 
 .collapsible p {
     text-align: center;
-    font-size: 30px; 
+    font-size: 20px; 
 }
+.common {
+    color: #d2d2d2;
+}
+.uncommon {
+    color: #aae6ed;
+}
+.rare {
+    color:#5268f4;
+}
+.mythical {
+    color: #b878ff;
+}
+.legendary {
+    color:#ff9600;
+}
+
 
 .rarity-logo .content{
     padding: 0 18px;
