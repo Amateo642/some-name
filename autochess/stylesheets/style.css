@@ -60,7 +60,7 @@ body {
 }
 
 .builder-logo {
-    height: 1000px;
+    min-height: 1000px;
     padding-top: 190px;
     text-align: center;
     color: white;
