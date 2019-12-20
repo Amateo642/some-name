@@ -60,12 +60,29 @@ body {
 }
 
 .builder-logo {
+    position: relative;
     min-height: 1000px;
-    padding-top: 190px;
+    padding-top: 100px;
     text-align: center;
     color: white;
-    background: url('../images/board.jpg'); 
+    background: url('../images/board.jpg');
+    background-position: center;
     background-size: cover;
+}
+
+.builder-logo .heroes-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.builder-logo .panel-heroes {
+    display: none;
+}
+
+.builder-logo .panel-heroes img {
+    width: 100px;
+    height: 100px;
 }
 
 .rarity-logo {

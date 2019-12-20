@@ -17,6 +17,14 @@ for (i = 0; i < coll.length; i++) {
 // builder
 let panelHeroes = document.querySelector(".panel-heroes");
 
+function toggleHeroes() {
+    if (panelHeroes.style.display === "block") {
+        panelHeroes.style.display = "none";
+    } else {
+        panelHeroes.style.display = "block";
+    }
+}
+
 const heroes = {
     'AbyssalCrawler': 1,
     'AbyssalGuard': 2,
@@ -152,5 +160,6 @@ const heroes = {
 }
 
 function chooseHero(heroName) {
+    console.log(heroName, heroes[heroName])
     alert(heroes[heroName]);
 }
