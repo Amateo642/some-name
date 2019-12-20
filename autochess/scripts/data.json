@@ -1,3 +1,264 @@
-"heroes": [{
-        "id": 1,
-}]
+{
+    "heroes": [
+        {
+            "name": "AbyssalCrawler",
+            "id": 1
+        },
+        {
+            "name": "AbyssalGuard",
+            "id": 2
+        },
+        {
+            "name": "ArgailKnight",
+            "id": 3
+        },
+        {
+            "name": "Berserker",
+            "id": 4
+        },
+        {
+            "name": "BlightSorcerer",
+            "id": 5
+        },
+        {
+            "name": "DarkSpirit",
+            "id": 6
+        },
+        {
+            "name": "Defector",
+            "id": 7
+        },
+        {
+            "name": "DesperateDoctor",
+            "id": 8
+        },
+        {
+            "name": "Devastator",
+            "id": 9
+        },
+        {
+            "name": "DoomArbiter",
+            "id": 10
+        },
+        {
+            "name": "DragonKnight",
+            "id": 11
+        },
+        {
+            "name": "DwarfSniper",
+            "id": 12
+        },
+        {
+            "name": "EgersisProphet",
+            "id": 13
+        },
+        {
+            "name": "EgersisRanger",
+            "id": 14
+        },
+        {
+            "name": "EvilKnight",
+            "id": 15
+        },
+        {
+            "name": "FallenWitcher",
+            "id": 16
+        },
+        {
+            "name": "FlammingWizard",
+            "id": 17
+        },
+        {
+            "name": "FortuneTeller",
+            "id": 18
+        },
+        {
+            "name": "FrostKnight",
+            "id": 19
+        },
+        {
+            "name": "GodOfThunder",
+            "id": 20
+        },
+        {
+            "name": "GodOfWar",
+            "id": 21
+        },
+        {
+            "name": "GrandHerald",
+            "id": 22
+        },
+        {
+            "name": "Grimtouch",
+            "id": 23
+        },
+        {
+            "name": "HeavenBomber",
+            "id": 24
+        },
+        {
+            "name": "Helicopter",
+            "id": 25
+        },
+        {
+            "name": "HellKnight",
+            "id": 26
+        },
+        {
+            "name": "LightbladeKnight",
+            "id": 27
+        },
+        {
+            "name": "LordOfSand",
+            "id": 28
+        },
+        {
+            "name": "OgreMage",
+            "id": 29
+        },
+        {
+            "name": "PhantomQueen",
+            "id": 30
+        },
+        {
+            "name": "PirateCaptain",
+            "id": 31
+        },
+        {
+            "name": "PoisonousWorm",
+            "id": 32
+        },
+        {
+            "name": "RazorClaw",
+            "id": 33
+        },
+        {
+            "name": "RedaxeChief",
+            "id": 34
+        },
+        {
+            "name": "Ripper",
+            "id": 35
+        },
+        {
+            "name": "RogueGuard",
+            "id": 36
+        },
+        {
+            "name": "ShadowCrawler",
+            "id": 37
+        },
+        {
+            "name": "ShadowDevil",
+            "id": 38
+        },
+        {
+            "name": "ShiningArcher",
+            "id": 39
+        },
+        {
+            "name": "ShiningAssassin",
+            "id": 40
+        },
+        {
+            "name": "ShiningDragon",
+            "id": 41
+        },
+        {
+            "name": "Siren",
+            "id": 42
+        },
+        {
+            "name": "SkullHunter",
+            "id": 43
+        },
+        {
+            "name": "SkyBreaker",
+            "id": 44
+        },
+        {
+            "name": "SoulBreaker",
+            "id": 45
+        },
+        {
+            "name": "SoulReaper",
+            "id": 46
+        },
+        {
+            "name": "StoneSpirit",
+            "id": 47
+        },
+        {
+            "name": "StormShaman",
+            "id": 48
+        },
+        {
+            "name": "StrangeEgg",
+            "id": 49
+        },
+        {
+            "name": "Swordman",
+            "id": 50
+        },
+        {
+            "name": "TabooWitcher",
+            "id": 51
+        },
+        {
+            "name": "TheSource",
+            "id": 52
+        },
+        {
+            "name": "ThunderSpirit",
+            "id": 53
+        },
+        {
+            "name": "TortolaElder",
+            "id": 54
+        },
+        {
+            "name": "TsunamiStalker",
+            "id": 55
+        },
+        {
+            "name": "TuskChampion",
+            "id": 56
+        },
+        {
+            "name": "Unicorn",
+            "id": 57
+        },
+        {
+            "name": "Venom",
+            "id": 58
+        },
+        {
+            "name": "Venomancer",
+            "id": 59
+        },
+        {
+            "name": "WarpwoodSage",
+            "id": 60
+        },
+        {
+            "name": "WaterSpirit",
+            "id": 61
+        },
+        {
+            "name": "Werewolf",
+            "id": 62
+        },
+        {
+            "name": "WindRanger",
+            "id": 63
+        },
+        {
+            "name": "WinterChiropteran",
+            "id": 64
+        },
+        {
+            "name": "WisperSeer",
+            "id": 65
+        }
+    ]
+}

@@ -87,6 +87,13 @@ body {
     height: 100px;
 }
 
+.builder .recommended-heroes {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 130px;
+}
+
 .rarity-logo {
     min-height: 1000px;
     padding-top: 190px;
