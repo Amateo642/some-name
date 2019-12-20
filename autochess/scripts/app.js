@@ -15,13 +15,14 @@ for (i = 0; i < coll.length; i++) {
 }
 
 // builder
-let panelHeroes = document.querySelector(".panel-heroes");
+const builder = document.querySelector(".builder");
+const panelHeroes = document.querySelector(".panel-heroes");
 
 function toggleHeroes() {
-    if (panelHeroes.style.display === "block") {
-        panelHeroes.style.display = "none";
-    } else {
+    if (panelHeroes.style.display === "none") {
         panelHeroes.style.display = "block";
+    } else {
+        panelHeroes.style.display = "none";
     }
 }
 
@@ -160,6 +161,9 @@ const heroes = {
 }
 
 function chooseHero(heroName) {
-    console.log(heroName, heroes[heroName])
-    alert(heroes[heroName]);
+    console.log(heroName, heroes[heroName]);
+    toggleHeroes();
+    const img = document.createElement('img');
+    img.src = `images/face/${heroName}.png`;
+    builder.appendChild(img);
 }

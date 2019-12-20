@@ -59,7 +59,7 @@ body {
     text-align: center;
 }
 
-.builder-logo {
+.builder {
     position: relative;
     min-height: 1000px;
     padding-top: 100px;
@@ -70,17 +70,19 @@ body {
     background-size: cover;
 }
 
-.builder-logo .heroes-button {
+.builder .heroes-button {
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-.builder-logo .panel-heroes {
-    display: none;
+.builder .panel-heroes {
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
-.builder-logo .panel-heroes img {
+.builder .panel-heroes img {
     width: 100px;
     height: 100px;
 }
