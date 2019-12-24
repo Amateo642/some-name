@@ -305,7 +305,7 @@ function renderPanelHeroes() {
             img.style.opacity = ".5";
         } else {
             img.onclick = () => {
-                chooseHeroAndToggle(hero.name);
+                chooseHeroAndToggle(hero);
             };
         }
         panelHeroes.appendChild(img);
@@ -334,31 +334,30 @@ function recommend() {
         const img = document.createElement('img');
         img.src = `images/face/${hero.name}.png`;
         img.onclick = () => {
-            chooseHero(hero.name);
+            chooseHero(hero);
         };
         recommendedHeroes.appendChild(img);
     });
 }
 
-function toggleHeroes() {
-    if (panelHeroes.style.display === "none") {
-        panelHeroes.style.display = "block";
+function togglePanelHeroes() {
+    if (panelHeroes.style.display === 'none') {
+        panelHeroes.style.display = 'block';
     } else {
-        panelHeroes.style.display = "none";
+        panelHeroes.style.display = 'none';
     }
 }
 
-function chooseHeroAndToggle(heroName) {
-    toggleHeroes();
-    chooseHero(heroName);
+function chooseHeroAndToggle(hero) {
+    togglePanelHeroes();
+    chooseHero(hero);
 }
 
-function chooseHero(heroName) {
-    const hero = heroes.find(hero => hero.name === heroName);
-    if (hero) {
+function chooseHero(hero) {
+    if (!choosenHeroes.includes(hero)) {
         choosenHeroes.push(hero);
         const img = document.createElement('img');
-        img.src = `images/face/${heroName}.png`;
+        img.src = `images/face/${hero.name}.png`;
         builder.appendChild(img);
         renderPanelHeroes();
     }
