@@ -14,143 +14,355 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
+
+const heroes = [
+    {
+        name: 'AbyssalCrawler',
+        id: 1,
+        race: 'marine',
+        class: 'assassin'
+    },
+    {
+        name: 'AbyssalGuard',
+        id: 2,
+        race: 'marine',
+        class: 'warrior'
+    },
+    {
+        name: 'ArgailKnight',
+        id: 3,
+        race: 'human',
+        class: 'knight'
+    },
+    {
+        name: 'Berserker',
+        id: 4,
+        race: 'troll',
+        class: 'warrior'
+    },
+    {
+        name: 'BlightSorcerer',
+        id: 5
+    },
+    {
+        name: 'DarkSpirit',
+        id: 6
+    },
+    {
+        name: 'Defector',
+        id: 7
+    },
+    {
+        name: 'DesperateDoctor',
+        id: 8
+    },
+    {
+        name: 'Devastator',
+        id: 9
+    },
+    {
+        name: 'DoomArbiter',
+        id: 10
+    },
+    {
+        name: 'DragonKnight',
+        id: 11
+    },
+    {
+        name: 'DwarfSniper',
+        id: 12
+    },
+    {
+        name: 'EgersisProphet',
+        id: 13
+    },
+    {
+        name: 'EgersisRanger',
+        id: 14
+    },
+    {
+        name: 'EvilKnight',
+        id: 15
+    },
+    {
+        name: 'FallenWitcher',
+        id: 16
+    },
+    {
+        name: 'FlammingWizard',
+        id: 17
+    },
+    {
+        name: 'FortuneTeller',
+        id: 18
+    },
+    {
+        name: 'FrostKnight',
+        id: 19
+    },
+    {
+        name: 'GodOfThunder',
+        id: 20
+    },
+    {
+        name: 'GodOfWar',
+        id: 21
+    },
+    {
+        name: 'GrandHerald',
+        id: 22
+    },
+    {
+        name: 'Grimtouch',
+        id: 23
+    },
+    {
+        name: 'HeavenBomber',
+        id: 24
+    },
+    {
+        name: 'Helicopter',
+        id: 25
+    },
+    {
+        name: 'HellKnight',
+        id: 26
+    },
+    {
+        name: 'LightbladeKnight',
+        id: 27
+    },
+    {
+        name: 'LordOfSand',
+        id: 28
+    },
+    {
+        name: 'OgreMage',
+        id: 29
+    },
+    {
+        name: 'PhantomQueen',
+        id: 30
+    },
+    {
+        name: 'PirateCaptain',
+        id: 31
+    },
+    {
+        name: 'PoisonousWorm',
+        id: 32
+    },
+    {
+        name: 'RazorClaw',
+        id: 33
+    },
+    {
+        name: 'RedaxeChief',
+        id: 34,
+        race: 'cave',
+        class: 'warrior'
+    },
+    {
+        name: 'Ripper',
+        id: 35
+    },
+    {
+        name: 'RogueGuard',
+        id: 36
+    },
+    {
+        name: 'ShadowCrawler',
+        id: 37
+    },
+    {
+        name: 'ShadowDevil',
+        id: 38
+    },
+    {
+        name: 'ShiningArcher',
+        id: 39
+    },
+    {
+        name: 'ShiningAssassin',
+        id: 40
+    },
+    {
+        name: 'ShiningDragon',
+        id: 41
+    },
+    {
+        name: 'Siren',
+        id: 42
+    },
+    {
+        name: 'SkullHunter',
+        id: 43
+    },
+    {
+        name: 'SkyBreaker',
+        id: 44
+    },
+    {
+        name: 'SoulBreaker',
+        id: 45
+    },
+    {
+        name: 'SoulReaper',
+        id: 46
+    },
+    {
+        name: 'StoneSpirit',
+        id: 47
+    },
+    {
+        name: 'StormShaman',
+        id: 48
+    },
+    {
+        name: 'StrangeEgg',
+        id: 49
+    },
+    {
+        name: 'Swordman',
+        id: 50,
+        race: 'cave',
+        class: 'warrior'
+    },
+    {
+        name: 'TabooWitcher',
+        id: 51
+    },
+    {
+        name: 'TheSource',
+        id: 52
+    },
+    {
+        name: 'ThunderSpirit',
+        id: 53
+    },
+    {
+        name: 'TortolaElder',
+        id: 54
+    },
+    {
+        name: 'TsunamiStalker',
+        id: 55
+    },
+    {
+        name: 'TuskChampion',
+        id: 56
+    },
+    {
+        name: 'Unicorn',
+        id: 57
+    },
+    {
+        name: 'Venom',
+        id: 58
+    },
+    {
+        name: 'Venomancer',
+        id: 59
+    },
+    {
+        name: 'WarpwoodSage',
+        id: 60
+    },
+    {
+        name: 'WaterSpirit',
+        id: 61
+    },
+    {
+        name: 'Werewolf',
+        id: 62
+    },
+    {
+        name: 'WindRanger',
+        id: 63
+    },
+    {
+        name: 'WinterChiropteran',
+        id: 64
+    },
+    {
+        name: 'WisperSeer',
+        id: 65
+    }
+]
+
+
+
 // builder
-let panelHeroes = document.querySelector(".panel-heroes");
+const builder = document.querySelector(".builder");
+const panelHeroes = document.querySelector(".panel-heroes");
+const recommendedHeroes = document.querySelector(".recommended-heroes");
 
-const heroes = {
-    'AbyssalCrawler': 1,
-    'AbyssalGuard': 2,
-    'ArgailKnight': 3,
-    'Berserker': 4,
-    'BlightSorcerer': 5,
-    'DarkSpirit': 6,
-    'Defector': 7,
-    'DesperateDoctor': 8,
-    'Devastator': 9,
-    'DoomArbiter': 10,
-    'DragonKnight': 11,
-    'DwarfSniper': 12,
-    'EgersisProphet': 13,
-    'EgersisRanger': 14,
-    'EvilKnight': 15,
-    'FallenWitcher': 16,
-    'FlammingWizard': 17,
-    'FortuneTeller': 18,
-    'FrostKnight': 19,
-    'GodOfThunder': 20,
-    'GodOfWar': 21,
-    'GrandHerald': 22,
-    'Grimtouch': 23,
-    'HeavenBomber': 24,
-    'Helicopter': 25,
-    'HellKnight': 26,
-    'LightbladeKnight': 27,
-    'LordOfSand': 28,
-    'OgreMage': 29,
-    'PhantomQueen': 30,
-    'PirateCaptain': 31,
-    'PoisonousWorm': 32,
-    'RazorClaw': 33,
-    'RedaxeChief': 34,
-    'Ripper': 35,
-    'RogueGuard': 36,
-    'ShadowCrawler': 37,
-    'ShadowDevil': 38,
-    'ShiningArcher': 39,
-    'ShiningAssassin': 40,
-    'ShiningDragon': 41,
-    'Siren': 42,
-    'SkullHunter': 43,
-    'SkyBreaker': 44,
-    'SoulBreaker': 45,
-    'SoulReaper': 46,
-    'StoneSpirit': 47,
-    'StormShaman': 48,
-    'StrangeEgg': 49,
-    'Swordman': 50,
-    'TabooWitcher': 51,
-    'TheSource': 52,
-    'ThunderSpirit': 53,
-    'TortolaElder': 54,
-    'TsunamiStalker': 55,
-    'TuskChampion': 56,
-    'Unicorn': 57,
-    'Venom': 58,
-    'Venomancer': 59,
-    'WarpwoodSage': 60,
-    'WaterSpirit': 61,
-    'Werewolf': 62,
-    'WindRanger': 63,
-    'WinterChiropteran': 64,
-    'WisperSeer': 65,
+const choosenHeroes = [];//массив для выбраных(поставленных на поле) героев    
 
-    1: 'AbyssalCrawler',
-    2: 'AbyssalGuard',
-    3: 'ArgailKnight',
-    4: 'Berserker',
-    5: 'BlightSorcerer',
-    6: 'DarkSpirit',
-    7: 'Defector',
-    8: 'DesperateDoctor',
-    9: 'Devastator',
-    10: 'DoomArbiter',
-    11: 'DragonKnight',
-    12: 'DwarfSniper',
-    13: 'EgersisProphet',
-    14: 'EgersisRanger',
-    15: 'EvilKnight',
-    16: 'FallenWitcher',
-    17: 'FlammingWizard',
-    18: 'FortuneTeller',
-    19: 'FrostKnight',
-    20: 'GodOfThunder',
-    21: 'GodOfWar',
-    22: 'GrandHerald',
-    23: 'Grimtouch',
-    24: 'HeavenBomber',
-    25: 'Helicopter',
-    26: 'HellKnight',
-    27: 'LightbladeKnight',
-    28: 'LordOfSand',
-    29: 'OgreMage',
-    30: 'PhantomQueen',
-    31: 'PirateCaptain',
-    32: 'PoisonousWorm',
-    33: 'RazorClaw',
-    34: 'RedaxeChief',
-    35: 'Ripper',
-    36: 'RogueGuard',
-    37: 'ShadowCrawler',
-    38: 'ShadowDevil',
-    39: 'ShiningArcher',
-    40: 'ShiningAssassin',
-    41: 'ShiningDragon',
-    42: 'Siren',
-    43: 'SkullHunter',
-    44: 'SkyBreaker',
-    45: 'SoulBreaker',
-    46: 'SoulReaper',
-    47: 'StoneSpirit',
-    48: 'StormShaman',
-    49: 'StrangeEgg',
-    50: 'Swordman',
-    51: 'TabooWitcher',
-    52: 'TheSource',
-    53: 'ThunderSpirit',
-    54: 'TortolaElder',
-    55: 'TsunamiStalker',
-    56: 'TuskChampion',
-    57: 'Unicorn',
-    58: 'Venom',
-    59: 'Venomancer',
-    60: 'WarpwoodSage',
-    61: 'WaterSpirit',
-    62: 'Werewolf',
-    63: 'WindRanger',
-    64: 'WinterChiropteran',
-    65: 'WisperSeer',
+function renderPanelHeroes() {
+    panelHeroes.innerHTML = "";
+    heroes.forEach(hero => {
+        const img = document.createElement('img');
+        img.src = `images/face/${hero.name}.png`;
+        if (choosenHeroes.includes(hero)) { // если герой в массиве то прозрачность
+            img.style.opacity = ".5";
+        } else {
+            img.onclick = () => {
+                chooseHeroAndToggle(hero);
+            };
+        }
+        panelHeroes.appendChild(img);//Новый элемент на панеле
+    });
+    recommend();
 }
 
-function chooseHero(heroName) {
-    alert(heroes[heroName]);
+renderPanelHeroes();
+
+function recommend() { // spread(... - расширение)
+    const races = [...new Set(choosenHeroes.map(hero => hero.race))];//при выборе героя выдает новый массив с расами
+    const heroesByRaces = heroes.filter(hero => !choosenHeroes.includes(hero)).filter(hero => races.includes(hero.race));//исключить уже выбраных героев из choosenHeroes и вернуть тех кто есть в массиве с расы
+    const classes = [...new Set(choosenHeroes.map(hero => hero.class))];//при выборе героя выдает новый массив с классами
+    const heroesByClasses = heroes.filter(hero => !choosenHeroes.includes(hero)).filter(hero => classes.includes(hero.class));
+
+    const heroesIntersection = heroesByRaces.filter(hero => heroesByClasses.includes(hero));//искать пересечение и сохранить совпадение рас и класса
+
+    const result = [
+        ...heroesIntersection,
+        ...heroesByRaces.filter(hero => !heroesIntersection.includes(hero)),//фильтр на расу и класс чтоб не выдавало повторно
+        ...heroesByClasses.filter(hero => !heroesIntersection.includes(hero))
+    ];
+
+    recommendedHeroes.innerHTML = "";//добавляем в HTML
+    result.forEach(hero => {
+        const img = document.createElement('img');
+        img.src = `images/face/${hero.name}.png`;
+        img.onclick = () => {
+            chooseHero(hero);
+        };
+        recommendedHeroes.appendChild(img);
+    });
+}
+
+
+function togglePanelHeroes() {
+    if (panelHeroes.style.display === "none") {//если скрыта
+        panelHeroes.style.display = "block";//показываем
+    } else {
+        panelHeroes.style.display = "none";//обратно
+    }
+}
+
+function chooseHeroAndToggle(hero) { //
+    togglePanelHeroes();//скрыть панель
+    chooseHero(hero);//выбрать героя
+}
+
+function chooseHero(hero) {//выбрать героя
+    if (!choosenHeroes.includes(hero)) {//если его нет в списке
+        choosenHeroes.push(hero);//тогда проиходит след добавляем в массив
+        const img = document.createElement('img');
+        img.src = `images/face/${hero.name}.png`;//атрибут картинки
+        builder.appendChild(img);//добавляет в конец первого картинку
+        renderPanelHeroes();//перерисовать картинку панель херойс
+    }
 }
