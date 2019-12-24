@@ -59,13 +59,37 @@ body {
     text-align: center;
 }
 
-.builder-logo {
+.builder {
     min-height: 1000px;
-    padding-top: 190px;
+    padding-top: 100px;
     text-align: center;
     color: white;
     background: url('../images/board.jpg'); 
     background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.builder .heroes-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.builder .panel-heroes {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.builder .panel-heroes img {
+    width: 100px;
+    height: 100px;
+}
+.builder .recommended-heroes {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 130px;
 }
 
 .rarity-logo {
