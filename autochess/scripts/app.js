@@ -14,6 +14,7 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
+
 const heroes = [
     {
         name: 'AbyssalCrawler',
@@ -289,47 +290,49 @@ const heroes = [
     }
 ]
 
+
+
 // builder
 const builder = document.querySelector(".builder");
 const panelHeroes = document.querySelector(".panel-heroes");
 const recommendedHeroes = document.querySelector(".recommended-heroes");
 
-const choosenHeroes = [];
+const choosenHeroes = [];//массив для выбраных(поставленных на поле) героев    
 
 function renderPanelHeroes() {
     panelHeroes.innerHTML = "";
     heroes.forEach(hero => {
         const img = document.createElement('img');
         img.src = `images/face/${hero.name}.png`;
-        if (choosenHeroes.includes(hero)) {
+        if (choosenHeroes.includes(hero)) { // если герой в массиве то прозрачность
             img.style.opacity = ".5";
         } else {
             img.onclick = () => {
                 chooseHeroAndToggle(hero);
             };
         }
-        panelHeroes.appendChild(img);
+        panelHeroes.appendChild(img);//Новый элемент на панеле
     });
     recommend();
 }
 
 renderPanelHeroes();
 
-function recommend() {
-    const races = [...new Set(choosenHeroes.map(hero => hero.race))];
-    const heroesByRaces = heroes.filter(hero => !choosenHeroes.includes(hero)).filter(hero => races.includes(hero.race));
-    const classes = [...new Set(choosenHeroes.map(hero => hero.class))];
+function recommend() { // spread(... - расширение)
+    const races = [...new Set(choosenHeroes.map(hero => hero.race))];//при выборе героя выдает новый массив с расами
+    const heroesByRaces = heroes.filter(hero => !choosenHeroes.includes(hero)).filter(hero => races.includes(hero.race));//исключить уже выбраных героев из choosenHeroes и вернуть тех кто есть в массиве с расы
+    const classes = [...new Set(choosenHeroes.map(hero => hero.class))];//при выборе героя выдает новый массив с классами
     const heroesByClasses = heroes.filter(hero => !choosenHeroes.includes(hero)).filter(hero => classes.includes(hero.class));
 
-    const heroesIntersection = heroesByRaces.filter(hero => heroesByClasses.includes(hero));
+    const heroesIntersection = heroesByRaces.filter(hero => heroesByClasses.includes(hero));//искать пересечение и сохранить совпадение рас и класса
 
     const result = [
         ...heroesIntersection,
-        ...heroesByRaces.filter(hero => !heroesIntersection.includes(hero)),
+        ...heroesByRaces.filter(hero => !heroesIntersection.includes(hero)),//фильтр на расу и класс чтоб не выдавало повторно
         ...heroesByClasses.filter(hero => !heroesIntersection.includes(hero))
     ];
 
-    recommendedHeroes.innerHTML = "";
+    recommendedHeroes.innerHTML = "";//добавляем в HTML
     result.forEach(hero => {
         const img = document.createElement('img');
         img.src = `images/face/${hero.name}.png`;
@@ -340,25 +343,26 @@ function recommend() {
     });
 }
 
+
 function togglePanelHeroes() {
-    if (panelHeroes.style.display === 'none') {
-        panelHeroes.style.display = 'block';
+    if (panelHeroes.style.display === "none") {//если скрыта
+        panelHeroes.style.display = "block";//показываем
     } else {
-        panelHeroes.style.display = 'none';
+        panelHeroes.style.display = "none";//обратно
     }
 }
 
-function chooseHeroAndToggle(hero) {
-    togglePanelHeroes();
-    chooseHero(hero);
+function chooseHeroAndToggle(hero) { //
+    togglePanelHeroes();//скрыть панель
+    chooseHero(hero);//выбрать героя
 }
 
-function chooseHero(hero) {
-    if (!choosenHeroes.includes(hero)) {
-        choosenHeroes.push(hero);
+function chooseHero(hero) {//выбрать героя
+    if (!choosenHeroes.includes(hero)) {//если его нет в списке
+        choosenHeroes.push(hero);//тогда проиходит след добавляем в массив
         const img = document.createElement('img');
-        img.src = `images/face/${hero.name}.png`;
-        builder.appendChild(img);
-        renderPanelHeroes();
+        img.src = `images/face/${hero.name}.png`;//атрибут картинки
+        builder.appendChild(img);//добавляет в конец первого картинку
+        renderPanelHeroes();//перерисовать картинку панель херойс
     }
 }

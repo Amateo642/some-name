@@ -60,14 +60,14 @@ body {
 }
 
 .builder {
-    position: relative;
     min-height: 1000px;
     padding-top: 100px;
     text-align: center;
     color: white;
-    background: url('../images/board.jpg');
-    background-position: center;
+    background: url('../images/board.jpg'); 
     background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .builder .heroes-button {
@@ -81,12 +81,10 @@ body {
     left: 0;
     right: 0;
 }
-
 .builder .panel-heroes img {
     width: 100px;
     height: 100px;
 }
-
 .builder .recommended-heroes {
     position: absolute;
     left: 0;
