@@ -35,6 +35,7 @@
 - [ ] установка VS Code
 - [ ] установка плагинов
   - live reload
+  - indent-rainbow
   - stylefmt
 
 ### HTML
